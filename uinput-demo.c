@@ -162,7 +162,7 @@ int main(void)
     }
 
   close(fd);
-  return 1;
+  return 0;
 }
 
 
