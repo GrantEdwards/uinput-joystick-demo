@@ -9,3 +9,5 @@ Thanks are owed to [Marek Klaus's blog article](https://blog.marekkraus.sk/c/lin
 The uinput-demo.c source file creates a joystick with three absolute analog channels (X, Y, Z) and four buttons (A B X Y).  There are source lines that are #if'ed out showing some additional buttons and absolute analog channels that are available.  For a complete list see [input-event-codes.h](https://github.com/torvalds/linux/blob/master/include/uapi/linux/input-event-codes.h).
 
 The X and Y analog channels are fed by "fast" triangle waves that are 90° out of phase.  The Z analog channel is a slow ramp.  The four buttons toggle on/off at four different frequencies (they appear as a 4-bit binary counter).
+
+To run the uinput-demo executable, you'll need write permission for /dev/uinput (which on Gentoo is usually only accessible to root).  Assuming you have no other joystick devices, the simulated joystick device will appear as /dev/input/js0.
