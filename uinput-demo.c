@@ -166,7 +166,7 @@ int main(void)
 }
 
 
-// enable and configure an absolution "position" analog channel
+// enable and configure an absolute "position" analog channel
 
 static void setup_abs(int fd, unsigned chan, int min, int max)
 {
